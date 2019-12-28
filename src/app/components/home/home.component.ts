@@ -34,7 +34,6 @@ export class HomeComponent implements OnInit {
   }
 
   singleUser(){
-    alert(this.username)
     this.githubUsers=[]
     this.gituserservice.singleUser(this.username)
     .subscribe((data) => {
