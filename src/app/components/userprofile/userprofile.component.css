@@ -1,0 +1,41 @@
+.userdiv{
+    justify-content: center;
+    text-align: center;
+   
+       
+}
+.userarticle{
+    margin-top: 2%;
+
+}
+
+.imgclass{
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+.usercard{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+            height: 300px;
+            padding: 5%;
+            background: #563D7C !important;
+            color: white;
+
+}
+
+
+.repocard{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+         box-shadow: 0 10px 6px -6px #777;
+         height: 200px;
+         padding: 5%;
+         background: #563D7C !important;
+         color: white;
+}
+
+.reporow{
+    margin-top: 2%;
+}

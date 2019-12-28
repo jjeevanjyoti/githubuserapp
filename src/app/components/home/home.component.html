@@ -1,0 +1,28 @@
+<div class="container-fluid home-section">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="container h-100">
+        <div class="d-flex justify-content-center h-100">
+          <div class="searchbar">
+            <input class="search_input" [(ngModel)]="username"type="text" name="" placeholder="Search by username">
+            <a  class="search_icon" (click)="singleUser()"><i class="fa fa-search"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-sm-3 userarticle" *ngFor="let user of this.githubUsers">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src={{user.avatar_url}} alt="Card image cap"/>
+          <div class="card-body">
+            <h5 class="card-title"><i class="fa fa-user" aria-hidden="true"></i>
+               {{user.login}}</h5>
+            <p class="card-text">Type: {{user.type}}</p>
+            <a  class="btn btn-primary showmore" (click)="userview(user)">show more ...</a>
+          </div>
+        </div>
+      </div>
+  </div>
+
+</div>

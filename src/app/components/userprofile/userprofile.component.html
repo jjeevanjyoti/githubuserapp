@@ -1,0 +1,40 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 userdiv">
+            <div class="col-sm-12 userarticle" ></div>
+                <div class="card usercard">
+                  <img class="card-img-top imgclass" src={{this.user.avatar_url}} alt="Card image cap"/>
+                  <div class="card-body">
+                    <h5 class="card-title">{{this.user.login}}</h5>
+                    <p class="card-text">
+                        <span>Follower : {{this.userdata.followers}}</span> | 
+                        <span>Public repos : {{this.userdata.public_repos}}</span> |
+                        <span>Following : {{this.userdata.following}}</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            <div class="col-sm-2"></div>
+        </div>
+
+        <div class="row reporow">
+            <div class="col-sm-3" *ngFor="let repo of this.repos">
+                <div class="col-sm-12 userarticle"></div>
+                <div class="card repocard"  (click)="redirect(repo.html_url)">
+                  <div class="card-body">
+                      <h4>{{this.repo.name}}</h4>
+                    <p class="card-title">{{this.repo.description}}</p>
+                    <p class="card-text">
+                        <span>Language : {{this.repo.language}}</span> | 
+                        <span>Size(KB) : {{this.repo.size}}</span> 
+                    </p>
+                  </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+
